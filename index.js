@@ -14,6 +14,8 @@ app.use(bodyParser.json());
 // ---------------------------
 // 1) ตั้งค่า LINE Messaging API จาก ENV
 // ---------------------------
+console.log("🔑 Access Token length:", process.env.LINE_CHANNEL_ACCESS_TOKEN?.length);
+console.log("🔑 Secret length:", process.env.LINE_CHANNEL_SECRET?.length);
 const config = {
   channelAccessToken: process.env.LINE_CHANNEL_ACCESS_TOKEN, // token จาก LINE
   channelSecret: process.env.LINE_CHANNEL_SECRET,            // secret จาก LINE
